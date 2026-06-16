@@ -1,4 +1,4 @@
-/* ==========================================================================
+﻿/* ==========================================================================
    PEST CONTROL & FUMIGATION COMPANY - CUSTOM DESIGN SYSTEM
    ========================================================================== */
 
@@ -435,10 +435,16 @@ img {
   cursor: pointer;
 }
 
+.nav-menu-actions {
+  display: none;
+}
+
 /* Responsive Mobile Drawer */
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .menu-toggle {
     display: block;
+    position: relative;
+    z-index: 1000;
   }
   .nav-menu {
     position: fixed;
@@ -455,6 +461,7 @@ img {
     transition: right var(--transition-normal);
     z-index: 999;
     gap: 16px;
+    overflow-y: auto;
   }
   .nav-menu.active {
     right: 0;
@@ -485,6 +492,70 @@ img {
   .nav-actions {
     margin-left: auto;
     margin-right: 15px;
+  }
+
+  /* Actions inside mobile drawer */
+  .nav-menu-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    margin-top: 24px;
+    padding-top: 24px;
+    border-top: 1px solid var(--color-border);
+  }
+  
+  .nav-menu-actions .theme-toggle,
+  .nav-menu-actions .dir-toggle {
+    background: none;
+    border: 1px solid var(--color-border);
+    color: var(--text-primary);
+    cursor: pointer;
+    height: 38px;
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color var(--transition-normal);
+    font-family: var(--font-body);
+    font-weight: 500;
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  .nav-menu-actions .theme-toggle {
+    width: 38px;
+    padding: 0;
+  }
+
+  .nav-menu-actions .dir-toggle {
+    padding: 0 12px;
+    min-width: 48px;
+  }
+
+  .nav-menu-actions .theme-toggle:hover,
+  .nav-menu-actions .dir-toggle:hover {
+    background-color: var(--bg-surface-elevated);
+  }
+
+  .nav-menu-actions .btn-custom-sm {
+    flex: 1;
+    text-align: center;
+    white-space: nowrap;
+    padding: 8px 16px;
+    font-size: 0.85rem;
+    height: 38px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Hide the desktop action buttons in header on mobile */
+  .site-navbar .nav-actions > .theme-toggle,
+  .site-navbar .nav-actions > .dir-toggle,
+  .site-navbar .nav-actions > .btn-custom {
+    display: none;
   }
 }
 
@@ -1144,7 +1215,7 @@ img {
   background-position: center;
   position: relative;
 }
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .auth-image-side {
     display: none;
   }
@@ -1295,7 +1366,7 @@ img {
   transform: rotate(-180deg) scaleX(-1);
 }
 
-[dir="rtl"] @media (max-width: 991px) {
+[dir="rtl"] @media (max-width: 1024px) {
   .nav-menu {
     right: auto;
     left: -280px;
@@ -1305,6 +1376,7 @@ img {
   }
   .nav-menu.active {
     left: 0;
+    right: auto;
   }
   .nav-actions {
     margin-right: auto;

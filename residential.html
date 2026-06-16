@@ -1,25 +1,29 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PestShield | Home Protection Plans & Residential Pest Control</title>
-  <meta name="description" content="Discover our residential pest protection plans. Eco-friendly treatments, certified operators, and custom pricing guides for a pest-free home.">
-  
+  <meta name="description"
+    content="Discover our residential pest protection plans. Eco-friendly treatments, certified operators, and custom pricing guides for a pest-free home.">
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
   <!-- Grid CSS (Bootstrap 5 Grid Only) -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap-grid.min.css">
-  
+
   <!-- Custom Stylesheet -->
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
   <!-- Pre-load theme & direction preferences -->
   <script>
-    (function() {
+    (function () {
       const theme = localStorage.getItem('theme') || 'light';
       document.documentElement.setAttribute('data-theme', theme);
       const dir = localStorage.getItem('dir') || 'ltr';
@@ -27,6 +31,7 @@
     })();
   </script>
 </head>
+
 <body>
 
   <!-- Site Sticky Header -->
@@ -37,10 +42,11 @@
           <i data-lucide="shield-alert" class="logo-icon"></i>
           PestShield
         </a>
-        
+
         <ul class="nav-menu">
           <li class="nav-item">
-            <a href="#" class="nav-link">Home <i data-lucide="chevron-down" style="width:16px;height:16px;vertical-align:middle;"></i></a>
+            <a href="#" class="nav-link">Home <i data-lucide="chevron-down"
+                style="width:16px;height:16px;vertical-align:middle;"></i></a>
             <ul class="nav-dropdown">
               <li><a href="index.html" class="dropdown-link">Home 1 (Default)</a></li>
               <li><a href="home-2.html" class="dropdown-link">Home 2 (Property Focus)</a></li>
@@ -53,8 +59,18 @@
           <li class="nav-item"><a href="pest-guide.html" class="nav-link">Pest Guide</a></li>
           <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
           <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          <li class="nav-menu-actions">
+            <button class="theme-toggle" aria-label="Toggle dark mode">
+              <i data-lucide="moon" class="moon-icon" style="width:20px;height:20px;"></i>
+              <i data-lucide="sun" class="sun-icon" style="width:20px;height:20px;"></i>
+            </button>
+            <button class="dir-toggle" aria-label="Toggle RTL layout">
+              <span class="dir-text">RTL</span>
+            </button>
+            <a href="signup.html" class="btn-custom btn-custom-primary btn-custom-sm">Sign Up</a>
+          </li>
         </ul>
-        
+
         <div class="nav-actions">
           <button class="theme-toggle" aria-label="Toggle dark mode">
             <i data-lucide="moon" class="moon-icon" style="width:20px;height:20px;"></i>
@@ -64,7 +80,7 @@
             <span class="dir-text">RTL</span>
           </button>
           <a href="signup.html" class="btn-custom btn-custom-primary btn-custom-sm">Sign Up</a>
-          
+
           <button class="menu-toggle" aria-label="Toggle Menu" aria-expanded="false">
             <i data-lucide="menu"></i>
           </button>
@@ -91,59 +107,66 @@
         <div class="col-lg-8 text-center section-title-wrapper gsap-fade-up">
           <span class="section-subtitle">Flexible Pricing</span>
           <h2 class="section-title">Select the Shield Your Home Needs</h2>
-          <p class="section-desc">Our plans are designed to accommodate varying home sizes, local vegetation density, and historic pest loads.</p>
+          <p class="section-desc">Our plans are designed to accommodate varying home sizes, local vegetation density,
+            and historic pest loads.</p>
         </div>
       </div>
-      <div class="row g-4 align-items-stretch">
+      <div class="row g-4 align-items-stretch justify-content-center">
         <!-- Tier 1 -->
-        <div class="col-lg-4 gsap-fade-up">
+        <div class="col-lg-4 col-md-6 gsap-fade-up">
           <div class="pricing-wrapper">
             <h3 class="pricing-title">Standard Guard</h3>
             <div class="pricing-price">$39<span>/month</span></div>
-            <p style="color:var(--text-secondary);font-size:0.9rem;margin-bottom:20px;">Ideal for apartments and homes with minor seasonal insect activity.</p>
+            <p style="color:var(--text-secondary);font-size:0.9rem;margin-bottom:20px;">Ideal for apartments and homes
+              with minor seasonal insect activity.</p>
             <hr style="border:0;border-top:1px solid var(--color-border);margin:20px 0;">
             <ul class="pricing-features">
-              <li><i data-lucide="check" style="width:16px;height:16px;"></i> Quarterly interior treatment</li>
-              <li><i data-lucide="check" style="width:16px;height:16px;"></i> Standard crawling insect coverage</li>
-              <li><i data-lucide="check" style="width:16px;height:16px;"></i> Perimeter defense shield (6 ft)</li>
-              <li><i data-lucide="check" style="width:16px;height:16px;"></i> Free callback request service</li>
+              <li><i data-lucide="check" style="width:16px;height:16px;"></i>interior treatment</li>
+              <li><i data-lucide="check" style="width:16px;height:16px;"></i>crawling insect coverage</li>
+              <li><i data-lucide="check" style="width:16px;height:16px;"></i>Perimeter defense shield</li>
+              <li><i data-lucide="check" style="width:16px;height:16px;"></i>Free callback service</li>
             </ul>
-            <a href="contact.html" class="btn-custom btn-custom-secondary w-100" style="margin-top:auto;">Activate Standard</a>
+            <a href="contact.html" class="btn-custom btn-custom-secondary w-100" style="margin-top:auto;">Activate
+              Standard</a>
           </div>
         </div>
 
         <!-- Tier 2 (Featured) -->
-        <div class="col-lg-4 gsap-fade-up">
+        <div class="col-lg-4 col-md-6 gsap-fade-up">
           <div class="pricing-wrapper featured">
             <div class="pricing-badge">Most Popular</div>
             <h3 class="pricing-title">Premium Defense</h3>
             <div class="pricing-price">$59<span>/month</span></div>
-            <p style="color:var(--text-secondary);font-size:0.9rem;margin-bottom:20px;">Comprehensive care targeting insects, spiders, rodents, and wasps.</p>
+            <p style="color:var(--text-secondary);font-size:0.9rem;margin-bottom:20px;">Comprehensive care targeting
+              insects, spiders, rodents, and wasps.</p>
             <hr style="border:0;border-top:1px solid var(--color-border);margin:20px 0;">
             <ul class="pricing-features">
-              <li><i data-lucide="check" style="width:16px;height:16px;"></i> Bi-monthly treatment checkups</li>
-              <li><i data-lucide="check" style="width:16px;height:16px;"></i> Stinging insect nest eradication</li>
-              <li><i data-lucide="check" style="width:16px;height:16px;"></i> Rodent exclusion & minor sealing</li>
-              <li><i data-lucide="check" style="width:16px;height:16px;"></i> Interior guarantee - 24hr callback</li>
+              <li><i data-lucide="check" style="width:16px;height:16px;"></i> Bi-monthly checkups</li>
+              <li><i data-lucide="check" style="width:16px;height:16px;"></i> insect eradication</li>
+              <li><i data-lucide="check" style="width:16px;height:16px;"></i> Rodent exclusion </li>
+              <li><i data-lucide="check" style="width:16px;height:16px;"></i> Interior guarantee </li>
             </ul>
-            <a href="contact.html" class="btn-custom btn-custom-primary w-100" style="margin-top:auto;">Activate Premium</a>
+            <a href="contact.html" class="btn-custom btn-custom-primary w-100" style="margin-top:auto;">Activate
+              Premium</a>
           </div>
         </div>
 
         <!-- Tier 3 -->
-        <div class="col-lg-4 gsap-fade-up">
+        <div class="col-lg-4 col-md-6 gsap-fade-up">
           <div class="pricing-wrapper">
             <h3 class="pricing-title">Ultimate Shield</h3>
             <div class="pricing-price">$89<span>/month</span></div>
-            <p style="color:var(--text-secondary);font-size:0.9rem;margin-bottom:20px;">Zero-worry coverage: includes mosquito fogging and crawlspace audits.</p>
+            <p style="color:var(--text-secondary);font-size:0.9rem;margin-bottom:20px;">Zero-worry coverage: includes
+              mosquito fogging and crawlspace audits.</p>
             <hr style="border:0;border-top:1px solid var(--color-border);margin:20px 0;">
             <ul class="pricing-features">
               <li><i data-lucide="check" style="width:16px;height:16px;"></i> Monthly precision visits</li>
-              <li><i data-lucide="check" style="width:16px;height:16px;"></i> Seasonal mosquito mist barrier</li>
-              <li><i data-lucide="check" style="width:16px;height:16px;"></i> Attics & crawlspace dusting</li>
-              <li><i data-lucide="check" style="width:16px;height:16px;"></i> Priority emergency crew dispatches</li>
+              <li><i data-lucide="check" style="width:16px;height:16px;"></i> mosquito mist barrier</li>
+              <li><i data-lucide="check" style="width:16px;height:16px;"></i> crawlspace dusting</li>
+              <li><i data-lucide="check" style="width:16px;height:16px;"></i> emergency dispatches</li>
             </ul>
-            <a href="contact.html" class="btn-custom btn-custom-secondary w-100" style="margin-top:auto;">Activate Ultimate</a>
+            <a href="contact.html" class="btn-custom btn-custom-secondary w-100" style="margin-top:auto;">Activate
+              Ultimate</a>
           </div>
         </div>
       </div>
@@ -155,25 +178,31 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-6">
-          <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80" alt="Beautiful clean residential home environment" style="border-radius:var(--radius-md);width:100%;height:360px;object-fit:cover;" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80"
+            alt="Beautiful clean residential home environment"
+            style="border-radius:var(--radius-md);width:100%;height:360px;object-fit:cover;" loading="lazy">
         </div>
         <div class="col-lg-6 mt-4 mt-lg-0">
           <span class="section-subtitle">The PestShield Standard</span>
           <h2 style="font-size:2rem;margin-bottom:20px;">Why Homeowners Depend on PestShield</h2>
-          <p style="margin-bottom:20px;">Standard commercial pesticide formulas are often over-concentrated, endangering pets and children. PestShield uses green target diagnostics to disrupt nesting biological behaviors using botanical repellents.</p>
+          <p style="margin-bottom:20px;">Standard commercial pesticide formulas are often over-concentrated, endangering
+            pets and children. PestShield uses green target diagnostics to disrupt nesting biological behaviors using
+            botanical repellents.</p>
           <ul style="list-style:none;padding:0;margin:0;">
             <li style="margin-bottom:15px;display:flex;align-items:flex-start;gap:10px;">
               <i data-lucide="heart" style="color:var(--color-accent);margin-top:4px;"></i>
               <div>
                 <strong style="display:block;">Eco-Friendly, Non-Staining Sprays</strong>
-                <span style="font-size:0.9rem;color:var(--text-secondary);">Safe for your pets, rugs, furniture fabrics, and garden vegetables.</span>
+                <span style="font-size:0.9rem;color:var(--text-secondary);">Safe for your pets, rugs, furniture fabrics,
+                  and garden vegetables.</span>
               </div>
             </li>
             <li style="margin-bottom:15px;display:flex;align-items:flex-start;gap:10px;">
               <i data-lucide="user-check" style="color:var(--color-accent);margin-top:4px;"></i>
               <div>
                 <strong style="display:block;">QualityPro Background Checked Crews</strong>
-                <span style="font-size:0.9rem;color:var(--text-secondary);">Licensed, bonded, and uniformed operators with clean professional records.</span>
+                <span style="font-size:0.9rem;color:var(--text-secondary);">Licensed, bonded, and uniformed operators
+                  with clean professional records.</span>
               </div>
             </li>
           </ul>
@@ -191,12 +220,34 @@
             <i data-lucide="shield-alert" class="logo-icon"></i>
             PestShield
           </a>
-          <p class="footer-desc">Commercial-grade protection for commercial properties, food services, and residential properties. Guaranteed results from industry certified professionals.</p>
+          <p class="footer-desc">Commercial-grade protection for commercial properties, food services, and residential
+            properties. Guaranteed results from industry certified professionals.</p>
           <ul class="footer-socials">
-            <li><a href="#" class="social-link" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a></li>
-            <li><a href="#" class="social-link" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></a></li>
-            <li><a href="#" class="social-link" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a></li>
-            <li><a href="#" class="social-link" aria-label="Linkedin"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a></li>
+            <li><a href="#" class="social-link" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                  height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                </svg></a></li>
+            <li><a href="#" class="social-link" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                  height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter">
+                  <path
+                    d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
+                </svg></a></li>
+            <li><a href="#" class="social-link" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg"
+                  width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                </svg></a></li>
+            <li><a href="#" class="social-link" aria-label="Linkedin"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                  height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                  <rect width="4" height="12" x="2" y="9" />
+                  <circle cx="4" cy="4" r="2" />
+                </svg></a></li>
           </ul>
         </div>
         <div class="col-lg-2 col-md-6">
@@ -221,10 +272,12 @@
         </div>
         <div class="col-lg-4 col-md-6">
           <h3 class="footer-title">Join Newsletter</h3>
-          <p class="footer-desc" style="margin-bottom:15px;">Get helpful season safety advice directly in your inbox. No spam, just real tips.</p>
+          <p class="footer-desc" style="margin-bottom:15px;">Get helpful season safety advice directly in your inbox. No
+            spam, just real tips.</p>
           <form class="newsletter-form interactive-form">
             <input type="email" class="form-control-custom" placeholder="Your email address" required>
-            <button type="submit" class="btn-custom btn-custom-primary btn-custom-sm"><i data-lucide="mail"></i></button>
+            <button type="submit" class="btn-custom btn-custom-primary btn-custom-sm"><i
+                data-lucide="mail"></i></button>
           </form>
         </div>
       </div>
@@ -240,4 +293,5 @@
   <script src="https://unpkg.com/lucide@latest"></script>
   <script src="assets/js/main.js"></script>
 </body>
+
 </html>

@@ -1,4 +1,4 @@
-/* ==========================================================================
+﻿/* ==========================================================================
    PEST CONTROL & FUMIGATION COMPANY - CORE JAVASCRIPT CONTROLLER
    ========================================================================== */
 
@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     if (dropdown && link) {
       link.addEventListener('click', (e) => {
-        if (window.innerWidth <= 991) {
+        if (window.innerWidth <= 1024) {
           e.preventDefault();
           item.classList.toggle('dropdown-active');
         }
