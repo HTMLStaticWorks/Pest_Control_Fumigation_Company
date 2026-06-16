@@ -1,0 +1,513 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PestShield | Commercial Pest Control & Property Management Solutions</title>
+  <meta name="description"
+    content="Dedicated pest control programs for commercial structures, food service industries, and property managers. Fast-response emergency dispatches.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Grid CSS (Bootstrap 5 Grid Only) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap-grid.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <!-- Pre-load theme & direction preferences -->
+  <script>
+    (function () {
+      const theme = localStorage.getItem('theme') || 'light';
+      document.documentElement.setAttribute('data-theme', theme);
+      const dir = localStorage.getItem('dir') || 'ltr';
+      document.documentElement.setAttribute('dir', dir);
+    })();
+  </script>
+</head>
+
+<body>
+
+  <!-- Site Sticky Header -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="site-navbar">
+        <a href="index.html" class="logo">
+          <i data-lucide="shield-alert" class="logo-icon"></i>
+          PestShield
+        </a>
+
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#" class="nav-link active">Home <i data-lucide="chevron-down"
+                style="width:16px;height:16px;vertical-align:middle;"></i></a>
+            <ul class="nav-dropdown">
+              <li><a href="index.html" class="dropdown-link">Home 1 (Default)</a></li>
+              <li><a href="home-2.html" class="dropdown-link">Home 2 (Property Focus)</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="residential.html" class="nav-link">Residential</a></li>
+          <li class="nav-item"><a href="commercial.html" class="nav-link">Commercial</a></li>
+          <li class="nav-item"><a href="termite-control.html" class="nav-link">Termite Control</a></li>
+          <li class="nav-item"><a href="pest-guide.html" class="nav-link">Pest Guide</a></li>
+          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="theme-toggle" aria-label="Toggle dark mode">
+            <i data-lucide="moon" class="moon-icon" style="width:20px;height:20px;"></i>
+            <i data-lucide="sun" class="sun-icon" style="width:20px;height:20px;"></i>
+          </button>
+          <button class="dir-toggle" aria-label="Toggle RTL layout">
+            <span class="dir-text">RTL</span>
+          </button>
+          <a href="signup.html" class="btn-custom btn-custom-primary btn-custom-sm">Sign Up</a>
+
+          <button class="menu-toggle" aria-label="Toggle Menu" aria-expanded="false">
+            <i data-lucide="menu"></i>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section Variant 2 (B2B Focus) -->
+  <section class="hero-section hero-v2">
+    <div class="hero-bg-graphic"></div>
+    <div class="container hero-container">
+      <div class="row align-items-center">
+        <div class="col-lg-7 gsap-hero-reveal">
+          <div class="hero-tagline">
+            <i data-lucide="shield-check" style="width:14px;height:14px;"></i> Integrated Pest Management (IPM) Standard
+          </div>
+          <h1 class="hero-title" style="font-size: 3rem;">Commercial Grade Defense For Properties & Enterprises</h1>
+          <p class="hero-desc">We minimize regulatory liability and protect your sanitation audit status. High-impact
+            commercial fumigation and long-term exclusion barriers managed by senior biologists.</p>
+          <div class="row g-3 mb-4 d-none d-sm-flex">
+            <div class="col-6">
+              <div class="d-flex align-items-center gap-2">
+                <i data-lucide="check" style="color:var(--color-accent);"></i>
+                <span style="font-weight: 500;font-size:0.9rem;">FDA & USDA Compliant</span>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="d-flex align-items-center gap-2">
+                <i data-lucide="check" style="color:var(--color-accent);"></i>
+                <span style="font-weight: 500;font-size:0.9rem;">Same-Day Emergency Dispatch</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-buttons">
+            <a href="commercial.html" class="btn-custom btn-custom-primary">View Compliance Plans</a>
+            <a href="tel:+18005557378" class="btn-custom btn-custom-secondary"><i data-lucide="phone-call"></i> Call
+              Emergency Dispatch</a>
+          </div>
+        </div>
+
+        <!-- Sidebar Quote Form for Quick Lead Capture -->
+        <div class="col-lg-5 mt-5 mt-lg-0 gsap-hero-reveal">
+          <div class="hero-quote-sidebar bg-surface">
+            <h3 style="margin-bottom:10px;font-size:1.35rem;">Request Business Diagnostic</h3>
+            <p style="color:var(--text-secondary);font-size:0.85rem;margin-bottom:20px;">Provide company specifics below
+              to speak with an enterprise specialist today.</p>
+            <form class="interactive-form">
+              <div class="form-group-custom">
+                <label class="form-label-custom" for="co-name">Company Name</label>
+                <input type="text" id="co-name" class="form-control-custom" placeholder="Acme Logistics Ltd" required>
+              </div>
+              <div class="form-group-custom">
+                <label class="form-label-custom" for="contact-name">Contact Person</label>
+                <input type="text" id="contact-name" class="form-control-custom" placeholder="Jane Smith" required>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 form-group-custom">
+                  <label class="form-label-custom" for="co-email">Work Email</label>
+                  <input type="email" id="co-email" class="form-control-custom" placeholder="jsmith@acme.com" required>
+                </div>
+                <div class="col-sm-6 form-group-custom">
+                  <label class="form-label-custom" for="co-phone">Work Phone</label>
+                  <input type="tel" id="co-phone" class="form-control-custom" placeholder="(555) 555-5555" required>
+                </div>
+              </div>
+              <div class="form-group-custom">
+                <label class="form-label-custom" for="facility-type">Facility Type</label>
+                <select id="facility-type" class="form-control-custom" required>
+                  <option value="">Choose Industry Sector</option>
+                  <option value="warehouse">Logistics & Warehouse</option>
+                  <option value="food">Food Processing / Kitchen</option>
+                  <option value="hotel">Hospitality & Hotel</option>
+                  <option value="office">Corporate Offices</option>
+                </select>
+              </div>
+              <button type="submit" class="btn-custom btn-custom-primary w-100"><i data-lucide="file-text"></i> Schedule
+                Site Audit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Industries We Serve Section -->
+  <section class="section-padding bg-surface-elevated">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center section-title-wrapper gsap-fade-up">
+          <span class="section-subtitle">Property Types</span>
+          <h2 class="section-title">Environments Under Our Surveillance</h2>
+          <p class="section-desc">We structure customized Integrated Pest Management (IPM) parameters tailored to
+            diverse commercial spaces.</p>
+        </div>
+      </div>
+      <div class="row g-4">
+        <!-- Sector 1 -->
+        <div class="col-md-4 gsap-fade-up">
+          <div class="card-wrapper card-visual">
+            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=600&q=80"
+              alt="Warehousing and logistics storage facility" class="card-visual-img" loading="lazy">
+            <div class="card-visual-body">
+              <h3>Logistics & Warehouses</h3>
+              <p>Continuous monitoring programs focused on stored product pests, rodent exclusion, and strict shipping
+                audit logs.</p>
+              <a href="commercial.html" class="service-card-link mt-auto">Exclusion Details <i data-lucide="arrow-right"
+                  style="width:16px;height:16px;"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- Sector 2 -->
+        <div class="col-md-4 gsap-fade-up">
+          <div class="card-wrapper card-visual">
+            <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=600&q=80"
+              alt="Commercial restaurant kitchen setting" class="card-visual-img" loading="lazy">
+            <div class="card-visual-body">
+              <h3>Food & Food Service</h3>
+              <p>Strict sanitation compliance safeguarding food prep, storage areas, and dining facilities from critical
+                health violations.</p>
+              <a href="commercial.html" class="service-card-link mt-auto">Protocols <i data-lucide="arrow-right"
+                  style="width:16px;height:16px;"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- Sector 3 -->
+        <div class="col-md-4 gsap-fade-up">
+          <div class="card-wrapper card-visual">
+            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+              alt="Boutique hotel lobby area" class="card-visual-img" loading="lazy">
+            <div class="card-visual-body">
+              <h3>Hotels & Hospitality</h3>
+              <p>Proactive bedbug scanning schedules, scent-detection systems, and discrete target sprays to shield
+                guest trust.</p>
+              <a href="commercial.html" class="service-card-link mt-auto">Brand Shielding <i data-lucide="arrow-right"
+                  style="width:16px;height:16px;"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Operational Process Timeline Section -->
+  <section class="section-padding bg-surface">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center section-title-wrapper gsap-fade-up">
+          <span class="section-subtitle">Operational Process</span>
+          <h2 class="section-title">Our Compliance Audit Timeline</h2>
+          <p class="section-desc">How PestShield systematically secures your commercial facility against infestations
+            and ensures clean regulatory inspections.</p>
+        </div>
+      </div>
+      <div class="process-timeline">
+        <!-- Step 1 -->
+        <div class="timeline-item gsap-fade-up">
+          <div class="timeline-number">1</div>
+          <div class="timeline-content">
+            <h3 style="margin-bottom: 10px;">Diagnostic & CCP Blueprinting</h3>
+            <p>Our senior biosecurity technicians perform a full building sweep, identifying structural intrusion points
+              and mapping critical control points (CCPs) for digital monitoring.</p>
+          </div>
+        </div>
+        <!-- Step 2 -->
+        <div class="timeline-item gsap-fade-up">
+          <div class="timeline-number">2</div>
+          <div class="timeline-content">
+            <h3 style="margin-bottom: 10px;">Targeted Exclusion & Barriers</h3>
+            <p>We deploy EPA-approved, low-impact botanical barrier sprays and high-durability exclusion screens. Baited
+              sensor grids are placed out of sight to track and isolate potential vectors.</p>
+          </div>
+        </div>
+        <!-- Step 3 -->
+        <div class="timeline-item gsap-fade-up">
+          <div class="timeline-number">3</div>
+          <div class="timeline-content">
+            <h3 style="margin-bottom: 10px;">Inspection-Ready Digital Logging</h3>
+            <p>Every treatment and trap verification is instantly saved to our secure client portal. You receive
+              structured reports showing chemical log documentation and bait status charts for state health inspectors.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Commercial Pricing Tables Section -->
+  <section class="section-padding bg-surface-elevated">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center section-title-wrapper gsap-fade-up">
+          <span class="section-subtitle">Fixed Pricing</span>
+          <h2 class="section-title">Commercial Sanitation Plans</h2>
+          <p class="section-desc">Select a plan matching your facility size, regulatory pressures, and scheduling
+            preferences.</p>
+        </div>
+      </div>
+      <div class="row g-4 align-items-stretch">
+        <!-- Tier 1 -->
+        <div class="col-lg-4 gsap-fade-up">
+          <div class="pricing-wrapper">
+            <h3 class="pricing-title">Retail & Offices</h3>
+            <div class="pricing-price">$149<span>/month</span></div>
+            <p style="color:var(--text-secondary);font-size:0.9rem;margin-bottom:20px;">Ideal for professional services,
+              boutiques, and light foot-traffic spaces.</p>
+            <hr style="border:0;border-top:1px solid var(--color-border);margin:20px 0;">
+            <ul class="pricing-features">
+              <li><i data-lucide="check" style="width:16px;height:16px;"></i> Bi-monthly barrier treatments</li>
+              <li><i data-lucide="check" style="width:16px;height:16px;"></i> Crawling insect exclusion</li>
+              <li><i data-lucide="check" style="width:16px;height:16px;"></i> Digital portal compliance logs</li>
+              <li><i data-lucide="check" style="width:16px;height:16px;"></i> 24-Hour callback warranty</li>
+            </ul>
+            <a href="contact.html" class="btn-custom btn-custom-secondary w-100" style="margin-top:auto;">Select Basic
+              Shield</a>
+          </div>
+        </div>
+        <!-- Tier 2 -->
+        <div class="col-lg-4 gsap-fade-up">
+          <div class="pricing-wrapper featured">
+            <div class="pricing-badge">Audit Guard</div>
+            <h3 class="pricing-title">Food & Hospitality</h3>
+            <div class="pricing-price">$299<span>/month</span></div>
+            <p style="color:var(--text-secondary);font-size:0.9rem;margin-bottom:20px;">Designed for commercial
+              kitchens, hotels, and food prep environments.</p>
+            <hr style="border:0;border-top:1px solid var(--color-border);margin:20px 0;">
+            <ul class="pricing-features">
+              <li><i data-lucide="check" style="width:16px;height:16px;"></i> Monthly intensive treatments</li>
+              <li><i data-lucide="check" style="width:16px;height:16px;"></i> Rodent & flying insect systems</li>
+              <li><i data-lucide="check" style="width:16px;height:16px;"></i> USDA/FDA compliance audit prep</li>
+              <li><i data-lucide="check" style="width:16px;height:16px;"></i> 2-Hour emergency dispatch SLA</li>
+            </ul>
+            <a href="contact.html" class="btn-custom btn-custom-primary w-100" style="margin-top:auto;">Select
+              Enterprise Guard</a>
+          </div>
+        </div>
+        <!-- Tier 3 -->
+        <div class="col-lg-4 gsap-fade-up">
+          <div class="pricing-wrapper">
+            <h3 class="pricing-title">Logistics & Plants</h3>
+            <div class="pricing-price">$499<span>/month</span></div>
+            <p style="color:var(--text-secondary);font-size:0.9rem;margin-bottom:20px;">High-volume storage hubs,
+              warehouses, and manufacturing centers.</p>
+            <hr style="border:0;border-top:1px solid var(--color-border);margin:20px 0;">
+            <ul class="pricing-features">
+              <li><i data-lucide="check" style="width:16px;height:16px;"></i> Weekly supervisor sweeps</li>
+              <li><i data-lucide="check" style="width:16px;height:16px;"></i> Perimeter bait station grid</li>
+              <li><i data-lucide="check" style="width:16px;height:16px;"></i> Bird & heavy rodent exclusion</li>
+              <li><i data-lucide="check" style="width:16px;height:16px;"></i> Dedicated biosecurity manager</li>
+            </ul>
+            <a href="contact.html" class="btn-custom btn-custom-secondary w-100" style="margin-top:auto;">Select
+              Industrial Command</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Commercial Testimonial / Credibility Section -->
+  <section class="section-padding bg-surface">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-5 gsap-fade-up">
+          <span class="section-subtitle">Client Endorsements</span>
+          <h2 class="section-title">Trusted By Enterprise Leaders</h2>
+          <p class="section-desc" style="margin-bottom:30px;">Read how we've helped facilities maintain spotless pest
+            histories and clear all regulatory sanitation audits with confidence.</p>
+          <div class="d-flex align-items-center gap-3">
+            <div style="font-size:2.5rem;font-weight: 500;color:var(--color-accent);">4.9/5</div>
+            <div>
+              <div style="display:flex;color:#F59E0B;">
+                <i data-lucide="star" style="width:16px;height:16px;fill:currentColor;"></i>
+                <i data-lucide="star" style="width:16px;height:16px;fill:currentColor;"></i>
+                <i data-lucide="star" style="width:16px;height:16px;fill:currentColor;"></i>
+                <i data-lucide="star" style="width:16px;height:16px;fill:currentColor;"></i>
+                <i data-lucide="star" style="width:16px;height:16px;fill:currentColor;"></i>
+              </div>
+              <span style="font-size:0.85rem;color:var(--text-secondary);">Avg. rating from 180+ property audits</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7 mt-5 mt-lg-0">
+          <div class="row g-4">
+            <div class="col-sm-6 gsap-fade-up">
+              <div class="card-wrapper" style="padding:24px;">
+                <p style="font-style:italic;font-size:0.9rem;margin-bottom:15px;">"Our logistics hub has been with
+                  PestShield for 3 years. Their compliance logs are extremely precise, making health department reviews
+                  stress-free."</p>
+                <h4 style="font-size:0.95rem;margin-bottom:2px;">Marcus Aurelius</h4>
+                <span style="font-size:0.75rem;color:var(--text-secondary);">General Manager, Zenith Hubs</span>
+              </div>
+            </div>
+            <div class="col-sm-6 gsap-fade-up">
+              <div class="card-wrapper" style="padding:24px;">
+                <p style="font-style:italic;font-size:0.9rem;margin-bottom:15px;">"PestShield responds within an hour
+                  for emergency issues in our commercial kitchens. Having a dependable vendor is vital to our
+                  operations."</p>
+                <h4 style="font-size:0.95rem;margin-bottom:2px;">Sarah Jenkins</h4>
+                <span style="font-size:0.75rem;color:var(--text-secondary);">Executive Chef, Oakhaven Bistro</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Commercial FAQ Accordion Section -->
+  <section class="section-padding bg-surface-elevated">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center section-title-wrapper gsap-fade-up">
+          <span class="section-subtitle">Compliance Q&A</span>
+          <h2 class="section-title">Business FAQ</h2>
+          <p class="section-desc">Find quick answers to common regulatory, scheduling, and safety questions about
+            commercial treatments.</p>
+        </div>
+      </div>
+      <div class="faq-accordion">
+        <div class="faq-item">
+          <button class="faq-header">
+            Are treatments compliant with USDA, FDA, and local sanitary codes?
+            <i data-lucide="chevron-down" class="faq-icon" style="width:20px;height:20px;"></i>
+          </button>
+          <div class="faq-content">
+            <p>Yes. All chemicals we apply are EPA-certified and food-safe once dried. We configure treatment schedules
+              around USDA and FDA requirements, maintaining complete chemical logs and bait maps on your online portal,
+              ready for immediate health department reviews.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-header">
+            What is the dispatch SLA for emergency commercial dispatches?
+            <i data-lucide="chevron-down" class="faq-icon" style="width:20px;height:20px;"></i>
+          </button>
+          <div class="faq-content">
+            <p>Commercial clients on our Food & Hospitality and Logistics plans receive a guaranteed under-2-hour onsite
+              dispatch. Our operators are available 24/7/365 to handle emergency containment before an active
+              infestation affects operations or flags a health code violation.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-header">
+            Do we need to close our facility or halt operations during treatments?
+            <i data-lucide="chevron-down" class="faq-icon" style="width:20px;height:20px;"></i>
+          </button>
+          <div class="faq-content">
+            <p>No. We schedule visits during off-peak hours (e.g., late nights, early mornings, or weekends) to ensure
+              zero operational friction. Our botanical formulations and target-placement baits pose no inhalation risks,
+              enabling employees to continue their duties without interruption.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <a href="index.html" class="logo" style="margin-bottom:20px;">
+            <i data-lucide="shield-alert" class="logo-icon"></i>
+            PestShield
+          </a>
+          <p class="footer-desc">Commercial-grade protection for commercial properties, food services, and residential
+            properties. Guaranteed results from industry certified professionals.</p>
+          <ul class="footer-socials">
+            <li><a href="#" class="social-link" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                  height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                </svg></a></li>
+            <li><a href="#" class="social-link" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                  height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter">
+                  <path
+                    d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
+                </svg></a></li>
+            <li><a href="#" class="social-link" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg"
+                  width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                </svg></a></li>
+            <li><a href="#" class="social-link" aria-label="Linkedin"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                  height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                  <rect width="4" height="12" x="2" y="9" />
+                  <circle cx="4" cy="4" r="2" />
+                </svg></a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h3 class="footer-title">Our Services</h3>
+          <ul class="footer-links">
+            <li><a href="residential.html">Residential Service</a></li>
+            <li><a href="commercial.html">Commercial Fumigation</a></li>
+            <li><a href="termite-control.html">Termite Mitigation</a></li>
+            <li><a href="services.html">Mosquito Control</a></li>
+            <li><a href="services.html">Rodent Exclusion</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h3 class="footer-title">Pest Resources</h3>
+          <ul class="footer-links">
+            <li><a href="pest-guide.html">Pest Identification</a></li>
+            <li><a href="blog.html">Expert Pest Blog</a></li>
+            <li><a href="faq.html">Safety Documentation</a></li>
+            <li><a href="contact.html">Emergency Line</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <h3 class="footer-title">Join Newsletter</h3>
+          <p class="footer-desc" style="margin-bottom:15px;">Get helpful season safety advice directly in your inbox. No
+            spam, just real tips.</p>
+          <form class="newsletter-form interactive-form">
+            <input type="email" class="form-control-custom" placeholder="Your email address" required>
+            <button type="submit" class="btn-custom btn-custom-primary btn-custom-sm"><i
+                data-lucide="mail"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 PestShield Inc. All Rights Reserved. Professional Static HTML Template.</p>
+        <p>Created to ThemeForest UI Standards.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
