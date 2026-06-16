@@ -139,7 +139,23 @@
         <div class="col-lg-6">
           <div class="hero-quote-sidebar bg-surface-elevated" style="padding:40px;box-shadow:none;">
             <h2 style="font-size:1.5rem;margin-bottom:15px;">Send Us A Direct Message</h2>
-            <p style="font-size:0.875rem;color:var(--text-secondary);margin-bottom:30px;">Have general inquiries? Fill out the details below, and our team will get back to you within 24 hours.</p>
+            <p style="font-size:0.875rem;color:var(--text-secondary);margin-bottom:20px;">Have general inquiries? Fill out the details below, and our team will get back to you within 24 hours.</p>
+            
+            <div style="display:flex;gap:10px;margin-bottom:30px;align-items:center;flex-wrap:wrap;">
+              <span style="font-size:0.85rem;font-weight:600;color:var(--text-primary);margin-right:5px;">Follow our updates:</span>
+              <a href="#" class="social-link" aria-label="Facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Twitter">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Linkedin">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+              </a>
+            </div>
             
             <form class="interactive-form">
               <div class="row">
@@ -171,18 +187,22 @@
           </div>
         </div>
 
-        <!-- Map Container Placeholder -->
+        <!-- Map Container -->
         <div class="col-lg-6">
-          <div style="height:100%;min-height:450px;border-radius:var(--radius-md);overflow:hidden;border:1px solid var(--color-border);background-color:var(--bg-surface-elevated);display:flex;align-items:center;justify-content:center;position:relative;">
-            <!-- Simple Mock Map Visual -->
-            <div style="position:absolute;top:0;left:0;width:100%;height:100%;background-image:radial-gradient(var(--color-border) 1.5px, transparent 1.5px);background-size:24px 24px;opacity:0.4;"></div>
-            <div class="text-center" style="position:relative;z-index:2;padding:40px;">
-              <div class="service-card-icon" style="margin-left:auto;margin-right:auto;width:70px;height:70px;background-color:rgba(22, 163, 74, 0.1);">
-                <i data-lucide="map-pin" style="width:32px;height:32px;color:var(--color-accent);"></i>
+          <div style="height:100%;min-height:450px;border-radius:var(--radius-md);overflow:hidden;border:1px solid var(--color-border);background-color:var(--bg-surface-elevated);position:relative;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.4284000392305!2d-73.98658122402517!3d40.753880671387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" width="100%" height="100%" style="border:0;display:block;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <!-- Floating Address Overlay Card -->
+            <div class="hero-quote-sidebar bg-surface" style="position:absolute;bottom:20px;left:20px;right:20px;padding:15px;margin:0;box-shadow:var(--shadow-lg);display:flex;align-items:center;gap:15px;border-radius:var(--radius-md);z-index:5;">
+              <div class="service-card-icon" style="margin:0;width:45px;height:45px;flex-shrink:0;background-color:rgba(22, 163, 74, 0.1);">
+                <i data-lucide="map-pin" style="width:20px;height:20px;color:var(--color-accent);"></i>
               </div>
-              <h3 style="font-size:1.35rem;margin-top:20px;margin-bottom:10px;">National Headquarters</h3>
-              <p style="color:var(--text-secondary);font-size:0.95rem;max-width:320px;margin-left:auto;margin-right:auto;margin-bottom:20px;">100 Environmental Parkway, Suite 500, New York, NY 10001</p>
-              <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="btn-custom btn-custom-secondary btn-custom-sm"><i data-lucide="external-link"></i> Get Driving Directions</a>
+              <div style="flex-grow:1;">
+                <h4 style="font-size:0.95rem;font-weight:600;margin-bottom:2px;color:var(--text-primary);">National Headquarters</h4>
+                <p style="color:var(--text-secondary);font-size:0.8rem;margin:0;line-height:1.4;">100 Environmental Parkway, Suite 500, New York, NY 10001</p>
+              </div>
+              <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="social-link" style="width:36px;height:36px;flex-shrink:0;" aria-label="Get Directions">
+                <i data-lucide="external-link" style="width:16px;height:16px;"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -237,8 +257,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 PestShield Inc. All Rights Reserved. Professional Static HTML Template.</p>
-        <p>Created to ThemeForest UI Standards.</p>
+        <p>&copy; 2026 PestShield Inc. All Rights Reserved.</p>
       </div>
     </div>
   </footer>

@@ -1,25 +1,29 @@
 ﻿<!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PestShield | Pest Identification & Educational Guide</title>
-  <meta name="description" content="Use our educational pest library to identify common crawling insects, rodents, flies, termites, and mosquitoes. Learn control practices and risks.">
-  
+  <meta name="description"
+    content="Use our educational pest library to identify common crawling insects, rodents, flies, termites, and mosquitoes. Learn control practices and risks.">
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
   <!-- Grid CSS (Bootstrap 5 Grid Only) -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap-grid.min.css">
-  
+
   <!-- Custom Stylesheet -->
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
   <!-- Pre-load theme & direction preferences -->
   <script>
-    (function() {
+    (function () {
       const theme = localStorage.getItem('theme') || 'light';
       document.documentElement.setAttribute('data-theme', theme);
       const dir = localStorage.getItem('dir') || 'ltr';
@@ -27,6 +31,7 @@
     })();
   </script>
 </head>
+
 <body>
 
   <!-- Site Sticky Header -->
@@ -37,10 +42,11 @@
           <i data-lucide="shield-alert" class="logo-icon"></i>
           PestShield
         </a>
-        
+
         <ul class="nav-menu">
           <li class="nav-item">
-            <a href="#" class="nav-link">Home <i data-lucide="chevron-down" style="width:16px;height:16px;vertical-align:middle;"></i></a>
+            <a href="#" class="nav-link">Home <i data-lucide="chevron-down"
+                style="width:16px;height:16px;vertical-align:middle;"></i></a>
             <ul class="nav-dropdown">
               <li><a href="index.html" class="dropdown-link">Home 1 (Default)</a></li>
               <li><a href="home-2.html" class="dropdown-link">Home 2 (Property Focus)</a></li>
@@ -64,7 +70,7 @@
             <a href="signup.html" class="btn-custom btn-custom-primary btn-custom-sm">Sign Up</a>
           </li>
         </ul>
-        
+
         <div class="nav-actions">
           <button class="theme-toggle" aria-label="Toggle dark mode">
             <i data-lucide="moon" class="moon-icon" style="width:20px;height:20px;"></i>
@@ -74,7 +80,7 @@
             <span class="dir-text">RTL</span>
           </button>
           <a href="signup.html" class="btn-custom btn-custom-primary btn-custom-sm">Sign Up</a>
-          
+
           <button class="menu-toggle" aria-label="Toggle Menu" aria-expanded="false">
             <i data-lucide="menu"></i>
           </button>
@@ -101,7 +107,8 @@
         <div class="col-lg-8 text-center section-title-wrapper">
           <span class="section-subtitle">Know Your Enemy</span>
           <h2 class="section-title">Identify What's Infesting Your Space</h2>
-          <p class="section-desc">Educate yourself on nesting habitats, warning signs, and risk parameters of common household pests.</p>
+          <p class="section-desc">Educate yourself on nesting habitats, warning signs, and risk parameters of common
+            household pests.</p>
         </div>
       </div>
 
@@ -109,12 +116,15 @@
         <!-- Pest 1 -->
         <div class="col-lg-4 col-md-6 gsap-fade-up">
           <div class="card-wrapper pest-card">
-            <img src="assets/images/pest_termites.png" alt="Subterranean termite damage close-up educational visual" class="pest-card-img" loading="lazy">
+            <img src="assets/images/pest_termites.png" alt="Subterranean termite damage close-up educational visual"
+              class="pest-card-img" loading="lazy">
             <div class="pest-card-body">
               <span class="pest-badge high-risk">Wood-Destroying</span>
               <h3 style="font-size:1.2rem;margin-bottom:10px;">Subterranean Termites</h3>
-              <p style="font-size:0.9rem;margin-bottom:15px;color:var(--text-secondary);">Eats framing wood silently. Highly destructive. Found inside structural baseboards and soil mud lines.</p>
-              <a href="pest-details.html" class="service-card-link">Profile Details <i data-lucide="arrow-right" style="width:16px;height:16px;"></i></a>
+              <p style="font-size:0.9rem;margin-bottom:15px;color:var(--text-secondary);">Eats framing wood silently.
+                Highly destructive. Found inside structural baseboards and soil mud lines.</p>
+              <a href="pest-details.html" class="service-card-link">Profile Details <i data-lucide="arrow-right"
+                  style="width:16px;height:16px;"></i></a>
             </div>
           </div>
         </div>
@@ -122,12 +132,15 @@
         <!-- Pest 2 -->
         <div class="col-lg-4 col-md-6 gsap-fade-up">
           <div class="card-wrapper pest-card">
-            <img src="assets/images/pest_cockroaches.png" alt="German cockroach macro detail" class="pest-card-img" loading="lazy">
+            <img src="assets/images/pest_cockroaches.png" alt="German cockroach macro detail" class="pest-card-img"
+              loading="lazy">
             <div class="pest-card-body">
               <span class="pest-badge high-risk">Health Hazard</span>
               <h3 style="font-size:1.2rem;margin-bottom:10px;">German Cockroaches</h3>
-              <p style="font-size:0.9rem;margin-bottom:15px;color:var(--text-secondary);">Transfers harmful pathogens and allergens to food preparation surfaces. Prefers moist kitchen environments.</p>
-              <a href="pest-details-2.html" class="service-card-link">Profile Details <i data-lucide="arrow-right" style="width:16px;height:16px;"></i></a>
+              <p style="font-size:0.9rem;margin-bottom:15px;color:var(--text-secondary);">Transfers harmful pathogens
+                and allergens to food preparation surfaces. Prefers moist places.</p>
+              <a href="pest-details-2.html" class="service-card-link">Profile Details <i data-lucide="arrow-right"
+                  style="width:16px;height:16px;"></i></a>
             </div>
           </div>
         </div>
@@ -135,12 +148,15 @@
         <!-- Pest 3 -->
         <div class="col-lg-4 col-md-6 gsap-fade-up">
           <div class="card-wrapper pest-card">
-            <img src="assets/images/pest_rodents.png" alt="Wild house mouse visual" class="pest-card-img" loading="lazy">
+            <img src="assets/images/pest_rodents.png" alt="Wild house mouse visual" class="pest-card-img"
+              loading="lazy">
             <div class="pest-card-body">
               <span class="pest-badge high-risk">Rodents</span>
               <h3 style="font-size:1.2rem;margin-bottom:10px;">Rats & House Mice</h3>
-              <p style="font-size:0.9rem;margin-bottom:15px;color:var(--text-secondary);">Chews structural wiring and insulation. Multiplies rapidly. Highly active in winter months.</p>
-              <a href="pest-details-3.html" class="service-card-link">Profile Details <i data-lucide="arrow-right" style="width:16px;height:16px;"></i></a>
+              <p style="font-size:0.9rem;margin-bottom:15px;color:var(--text-secondary);">Chews structural wiring and
+                insulation. Multiplies rapidly. Highly active in winter months.</p>
+              <a href="pest-details-3.html" class="service-card-link">Profile Details <i data-lucide="arrow-right"
+                  style="width:16px;height:16px;"></i></a>
             </div>
           </div>
         </div>
@@ -148,12 +164,15 @@
         <!-- Pest 4 -->
         <div class="col-lg-4 col-md-6 gsap-fade-up">
           <div class="card-wrapper pest-card">
-            <img src="assets/images/pest_mosquitoes.png" alt="Mosquito vector resting on leaf surface" class="pest-card-img" loading="lazy">
+            <img src="assets/images/pest_mosquitoes.png" alt="Mosquito vector resting on leaf surface"
+              class="pest-card-img" loading="lazy">
             <div class="pest-card-body">
               <span class="pest-badge">Flying Vectors</span>
               <h3 style="font-size:1.2rem;margin-bottom:10px;">Mosquitoes</h3>
-              <p style="font-size:0.9rem;margin-bottom:15px;color:var(--text-secondary);">Transmits viral pathogens via bites. Nesting peaks in warm environments with standing water pools.</p>
-              <a href="pest-details-4.html" class="service-card-link">Profile Details <i data-lucide="arrow-right" style="width:16px;height:16px;"></i></a>
+              <p style="font-size:0.9rem;margin-bottom:15px;color:var(--text-secondary);">Transmits viral pathogens via
+                bites. Nesting peaks in warm environments with standing water pools.</p>
+              <a href="pest-details-4.html" class="service-card-link">Profile Details <i data-lucide="arrow-right"
+                  style="width:16px;height:16px;"></i></a>
             </div>
           </div>
         </div>
@@ -161,12 +180,15 @@
         <!-- Pest 5 -->
         <div class="col-lg-4 col-md-6 gsap-fade-up">
           <div class="card-wrapper pest-card">
-            <img src="assets/images/pest_ants.png" alt="Carpenter ant crawling macro study" class="pest-card-img" loading="lazy">
+            <img src="assets/images/pest_ants.png" alt="Carpenter ant crawling macro study" class="pest-card-img"
+              loading="lazy">
             <div class="pest-card-body">
               <span class="pest-badge">Crawling Insects</span>
               <h3 style="font-size:1.2rem;margin-bottom:10px;">Carpenter Ants</h3>
-              <p style="font-size:0.9rem;margin-bottom:15px;color:var(--text-secondary);">Tunnels through wood structure framing to establish nests. Differs from termites in diet.</p>
-              <a href="pest-details-5.html" class="service-card-link">Profile Details <i data-lucide="arrow-right" style="width:16px;height:16px;"></i></a>
+              <p style="font-size:0.9rem;margin-bottom:15px;color:var(--text-secondary);">Tunnels through wood structure
+                framing to establish nests. Differs from termites in diet.</p>
+              <a href="pest-details-5.html" class="service-card-link">Profile Details <i data-lucide="arrow-right"
+                  style="width:16px;height:16px;"></i></a>
             </div>
           </div>
         </div>
@@ -174,12 +196,15 @@
         <!-- Pest 6 -->
         <div class="col-lg-4 col-md-6 gsap-fade-up">
           <div class="card-wrapper pest-card">
-            <img src="assets/images/pest_bedbug.png" alt="Professional bed bug mattress inspection detail" class="pest-card-img" loading="lazy">
+            <img src="assets/images/pest_bedbug.png" alt="Professional bed bug mattress inspection detail"
+              class="pest-card-img" loading="lazy">
             <div class="pest-card-body">
               <span class="pest-badge high-risk">High-Risk Infestation</span>
               <h3 style="font-size:1.2rem;margin-bottom:10px;">Bed Bugs</h3>
-              <p style="font-size:0.9rem;margin-bottom:15px;color:var(--text-secondary);">Hides in mattress tufts and bed framing. Feeds on humans at night. Requires immediate professional heat treatment.</p>
-              <a href="pest-details-6.html" class="service-card-link">Profile Details <i data-lucide="arrow-right" style="width:16px;height:16px;"></i></a>
+              <p style="font-size:0.9rem;margin-bottom:15px;color:var(--text-secondary);">Hides in mattress tufts and
+                bed framing. Feeds on humans at night. Requires heat treatment.</p>
+              <a href="pest-details-6.html" class="service-card-link">Profile Details <i data-lucide="arrow-right"
+                  style="width:16px;height:16px;"></i></a>
             </div>
           </div>
         </div>
@@ -194,7 +219,8 @@
         <div class="col-lg-8 text-center section-title-wrapper gsap-fade-up">
           <span class="section-subtitle">Year-Round Surveillance</span>
           <h2 class="section-title">Seasonal Pest Activity Calendar</h2>
-          <p class="section-desc">Pest threats shift as temperatures change. Learn when specific species peak and what steps you can take to shield your property.</p>
+          <p class="section-desc">Pest threats shift as temperatures change. Learn when specific species peak and what
+            steps you can take to shield your property.</p>
         </div>
       </div>
 
@@ -202,15 +228,24 @@
         <!-- Spring -->
         <div class="col-lg-3 col-sm-6 gsap-fade-up">
           <div class="card-wrapper" style="padding: 24px;">
-            <div class="service-card-icon" style="margin-bottom:15px; width:45px; height:45px; border-radius: var(--radius-sm);">
+            <div class="service-card-icon"
+              style="margin-bottom:15px; width:45px; height:45px; border-radius: var(--radius-sm);">
               <i data-lucide="sprout" style="width:20px;height:20px;"></i>
             </div>
             <h3 style="font-size: 1.15rem; margin-bottom: 5px;">Spring Season</h3>
-            <span style="font-size: 0.75rem; font-weight: 500; color: var(--color-accent); text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 15px;">Active: Termites & Ants</span>
-            <p style="font-size: 0.85rem; line-height: 1.5; margin-bottom: 15px; color: var(--text-secondary);">Warming soils trigger subterranean termite swarms and active foraging trails for carpenter ants.</p>
-            <ul style="list-style: none; font-size: 0.8rem; color: var(--text-secondary); padding: 0; display: flex; flex-direction: column; gap: 8px; border-top: 1px solid var(--color-border); padding-top: 12px;">
-              <li style="display: flex; gap: 6px; align-items: start;"><i data-lucide="check" style="width: 14px; height: 14px; color: var(--color-accent); flex-shrink:0; margin-top:2px;"></i> Clear dead wood debris</li>
-              <li style="display: flex; gap: 6px; align-items: start;"><i data-lucide="check" style="width: 14px; height: 14px; color: var(--color-accent); flex-shrink:0; margin-top:2px;"></i> Trim tree branches</li>
+            <span
+              style="font-size: 0.75rem; font-weight: 500; color: var(--color-accent); text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 15px;">Active:
+              Termites & Ants</span>
+            <p style="font-size: 0.85rem; line-height: 1.5; margin-bottom: 15px; color: var(--text-secondary);">Warming
+              soils trigger subterranean termite swarms and active foraging trails for carpenter ants.</p>
+            <ul
+              style="list-style: none; font-size: 0.8rem; color: var(--text-secondary); padding: 0; display: flex; flex-direction: column; gap: 8px; border-top: 1px solid var(--color-border); padding-top: 12px;">
+              <li style="display: flex; gap: 6px; align-items: start;"><i data-lucide="check"
+                  style="width: 14px; height: 14px; color: var(--color-accent); flex-shrink:0; margin-top:2px;"></i>
+                Clear dead wood debris</li>
+              <li style="display: flex; gap: 6px; align-items: start;"><i data-lucide="check"
+                  style="width: 14px; height: 14px; color: var(--color-accent); flex-shrink:0; margin-top:2px;"></i>
+                Trim tree branches</li>
             </ul>
           </div>
         </div>
@@ -218,15 +253,24 @@
         <!-- Summer -->
         <div class="col-lg-3 col-sm-6 gsap-fade-up">
           <div class="card-wrapper" style="padding: 24px;">
-            <div class="service-card-icon" style="margin-bottom:15px; width:45px; height:45px; border-radius: var(--radius-sm);">
+            <div class="service-card-icon"
+              style="margin-bottom:15px; width:45px; height:45px; border-radius: var(--radius-sm);">
               <i data-lucide="sun" style="width:20px;height:20px;"></i>
             </div>
             <h3 style="font-size: 1.15rem; margin-bottom: 5px;">Summer Season</h3>
-            <span style="font-size: 0.75rem; font-weight: 500; color: #EF4444; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 15px;">Active: Mosquitoes & Wasps</span>
-            <p style="font-size: 0.85rem; line-height: 1.5; margin-bottom: 15px; color: var(--text-secondary);">High temperatures accelerate breeding cycles. Mosquito vectors and yellowjackets peak in activity.</p>
-            <ul style="list-style: none; font-size: 0.8rem; color: var(--text-secondary); padding: 0; display: flex; flex-direction: column; gap: 8px; border-top: 1px solid var(--color-border); padding-top: 12px;">
-              <li style="display: flex; gap: 6px; align-items: start;"><i data-lucide="check" style="width: 14px; height: 14px; color: var(--color-accent); flex-shrink:0; margin-top:2px;"></i> Drain standing water</li>
-              <li style="display: flex; gap: 6px; align-items: start;"><i data-lucide="check" style="width: 14px; height: 14px; color: var(--color-accent); flex-shrink:0; margin-top:2px;"></i> Check window screens</li>
+            <span
+              style="font-size: 0.75rem; font-weight: 500; color: #EF4444; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 15px;">Active:
+              Mosquitoes & Wasps</span>
+            <p style="font-size: 0.85rem; line-height: 1.5; margin-bottom: 15px; color: var(--text-secondary);">High
+              temperatures accelerate breeding cycles. Mosquito vectors and yellowjackets peak in activity.</p>
+            <ul
+              style="list-style: none; font-size: 0.8rem; color: var(--text-secondary); padding: 0; display: flex; flex-direction: column; gap: 8px; border-top: 1px solid var(--color-border); padding-top: 12px;">
+              <li style="display: flex; gap: 6px; align-items: start;"><i data-lucide="check"
+                  style="width: 14px; height: 14px; color: var(--color-accent); flex-shrink:0; margin-top:2px;"></i>
+                Drain standing water</li>
+              <li style="display: flex; gap: 6px; align-items: start;"><i data-lucide="check"
+                  style="width: 14px; height: 14px; color: var(--color-accent); flex-shrink:0; margin-top:2px;"></i>
+                Check window screens</li>
             </ul>
           </div>
         </div>
@@ -234,15 +278,24 @@
         <!-- Autumn -->
         <div class="col-lg-3 col-sm-6 gsap-fade-up">
           <div class="card-wrapper" style="padding: 24px;">
-            <div class="service-card-icon" style="margin-bottom:15px; width:45px; height:45px; border-radius: var(--radius-sm);">
+            <div class="service-card-icon"
+              style="margin-bottom:15px; width:45px; height:45px; border-radius: var(--radius-sm);">
               <i data-lucide="leaf" style="width:20px;height:20px;"></i>
             </div>
             <h3 style="font-size: 1.15rem; margin-bottom: 5px;">Autumn Season</h3>
-            <span style="font-size: 0.75rem; font-weight: 500; color: #F59E0B; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 15px;">Active: Rodents & Spiders</span>
-            <p style="font-size: 0.85rem; line-height: 1.5; margin-bottom: 15px; color: var(--text-secondary);">Dropping temperatures push rodents and spiders to migrate indoors searching for food and warmth.</p>
-            <ul style="list-style: none; font-size: 0.8rem; color: var(--text-secondary); padding: 0; display: flex; flex-direction: column; gap: 8px; border-top: 1px solid var(--color-border); padding-top: 12px;">
-              <li style="display: flex; gap: 6px; align-items: start;"><i data-lucide="check" style="width: 14px; height: 14px; color: var(--color-accent); flex-shrink:0; margin-top:2px;"></i> Install garage door sweeps</li>
-              <li style="display: flex; gap: 6px; align-items: start;"><i data-lucide="check" style="width: 14px; height: 14px; color: var(--color-accent); flex-shrink:0; margin-top:2px;"></i> Seal pipes & crawlspaces</li>
+            <span
+              style="font-size: 0.75rem; font-weight: 500; color: #F59E0B; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 15px;">Active:
+              Rodents & Spiders</span>
+            <p style="font-size: 0.85rem; line-height: 1.5; margin-bottom: 15px; color: var(--text-secondary);">Dropping
+              temperatures push rodents and spiders to migrate indoors searching for food and warmth.</p>
+            <ul
+              style="list-style: none; font-size: 0.8rem; color: var(--text-secondary); padding: 0; display: flex; flex-direction: column; gap: 8px; border-top: 1px solid var(--color-border); padding-top: 12px;">
+              <li style="display: flex; gap: 6px; align-items: start;"><i data-lucide="check"
+                  style="width: 14px; height: 14px; color: var(--color-accent); flex-shrink:0; margin-top:2px;"></i>
+                Install garage door sweeps</li>
+              <li style="display: flex; gap: 6px; align-items: start;"><i data-lucide="check"
+                  style="width: 14px; height: 14px; color: var(--color-accent); flex-shrink:0; margin-top:2px;"></i>
+                Seal pipes & crawlspaces</li>
             </ul>
           </div>
         </div>
@@ -250,15 +303,24 @@
         <!-- Winter -->
         <div class="col-lg-3 col-sm-6 gsap-fade-up">
           <div class="card-wrapper" style="padding: 24px;">
-            <div class="service-card-icon" style="margin-bottom:15px; width:45px; height:45px; border-radius: var(--radius-sm);">
+            <div class="service-card-icon"
+              style="margin-bottom:15px; width:45px; height:45px; border-radius: var(--radius-sm);">
               <i data-lucide="snowflake" style="width:20px;height:20px;"></i>
             </div>
             <h3 style="font-size: 1.15rem; margin-bottom: 5px;">Winter Season</h3>
-            <span style="font-size: 0.75rem; font-weight: 500; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 15px;">Active: Mice & Bed Bugs</span>
-            <p style="font-size: 0.85rem; line-height: 1.5; margin-bottom: 15px; color: var(--text-secondary);">Rodents nest deeply inside walls. Travel holidays increase the transport risks of bedbug infestations.</p>
-            <ul style="list-style: none; font-size: 0.8rem; color: var(--text-secondary); padding: 0; display: flex; flex-direction: column; gap: 8px; border-top: 1px solid var(--color-border); padding-top: 12px;">
-              <li style="display: flex; gap: 6px; align-items: start;"><i data-lucide="check" style="width: 14px; height: 14px; color: var(--color-accent); flex-shrink:0; margin-top:2px;"></i> Seal attic insulation zones</li>
-              <li style="display: flex; gap: 6px; align-items: start;"><i data-lucide="check" style="width: 14px; height: 14px; color: var(--color-accent); flex-shrink:0; margin-top:2px;"></i> Inspect luggage post-travel</li>
+            <span
+              style="font-size: 0.75rem; font-weight: 500; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 15px;">Active:
+              Mice & Bed Bugs</span>
+            <p style="font-size: 0.85rem; line-height: 1.5; margin-bottom: 15px; color: var(--text-secondary);">Rodents
+              nest deeply inside walls. Travel holidays increase the transport risks of bedbug infestations.</p>
+            <ul
+              style="list-style: none; font-size: 0.8rem; color: var(--text-secondary); padding: 0; display: flex; flex-direction: column; gap: 8px; border-top: 1px solid var(--color-border); padding-top: 12px;">
+              <li style="display: flex; gap: 6px; align-items: start;"><i data-lucide="check"
+                  style="width: 14px; height: 14px; color: var(--color-accent); flex-shrink:0; margin-top:2px;"></i>
+                Seal attic insulation zones</li>
+              <li style="display: flex; gap: 6px; align-items: start;"><i data-lucide="check"
+                  style="width: 14px; height: 14px; color: var(--color-accent); flex-shrink:0; margin-top:2px;"></i>
+                Inspect luggage post-travel</li>
             </ul>
           </div>
         </div>
@@ -275,12 +337,34 @@
             <i data-lucide="shield-alert" class="logo-icon"></i>
             PestShield
           </a>
-          <p class="footer-desc">Commercial-grade protection for commercial properties, food services, and residential properties. Guaranteed results from industry certified professionals.</p>
+          <p class="footer-desc">Commercial-grade protection for commercial properties, food services, and residential
+            properties. Guaranteed results from industry certified professionals.</p>
           <ul class="footer-socials">
-            <li><a href="#" class="social-link" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a></li>
-            <li><a href="#" class="social-link" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></a></li>
-            <li><a href="#" class="social-link" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a></li>
-            <li><a href="#" class="social-link" aria-label="Linkedin"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a></li>
+            <li><a href="#" class="social-link" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                  height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                </svg></a></li>
+            <li><a href="#" class="social-link" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                  height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter">
+                  <path
+                    d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
+                </svg></a></li>
+            <li><a href="#" class="social-link" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg"
+                  width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                </svg></a></li>
+            <li><a href="#" class="social-link" aria-label="Linkedin"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                  height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                  <rect width="4" height="12" x="2" y="9" />
+                  <circle cx="4" cy="4" r="2" />
+                </svg></a></li>
           </ul>
         </div>
         <div class="col-lg-2 col-md-6">
@@ -305,16 +389,17 @@
         </div>
         <div class="col-lg-4 col-md-6">
           <h3 class="footer-title">Join Newsletter</h3>
-          <p class="footer-desc" style="margin-bottom:15px;">Get helpful season safety advice directly in your inbox. No spam, just real tips.</p>
+          <p class="footer-desc" style="margin-bottom:15px;">Get helpful season safety advice directly in your inbox. No
+            spam, just real tips.</p>
           <form class="newsletter-form interactive-form">
             <input type="email" class="form-control-custom" placeholder="Your email address" required>
-            <button type="submit" class="btn-custom btn-custom-primary btn-custom-sm"><i data-lucide="mail"></i></button>
+            <button type="submit" class="btn-custom btn-custom-primary btn-custom-sm"><i
+                data-lucide="mail"></i></button>
           </form>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 PestShield Inc. All Rights Reserved. Professional Static HTML Template.</p>
-        <p>Created to ThemeForest UI Standards.</p>
+        <p>&copy; 2026 PestShield Inc. All Rights Reserved.</p>
       </div>
     </div>
   </footer>
@@ -324,4 +409,5 @@
   <script src="https://unpkg.com/lucide@latest"></script>
   <script src="assets/js/main.js"></script>
 </body>
+
 </html>
