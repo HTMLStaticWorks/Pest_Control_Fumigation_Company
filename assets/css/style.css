@@ -1,4 +1,4 @@
-﻿/* ==========================================================================
+/* ==========================================================================
    PEST CONTROL & FUMIGATION COMPANY - CUSTOM DESIGN SYSTEM
    ========================================================================== */
 
@@ -663,6 +663,14 @@ img {
   .hero-stats-card {
     position: static;
     margin-top: 20px;
+  }
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+  .hero-buttons .btn-custom {
+    width: 100%;
+    justify-content: center;
   }
 }
 .hero-stats-icon {
